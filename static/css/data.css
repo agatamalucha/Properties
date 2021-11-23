@@ -1,0 +1,662 @@
+/*------------------------------------------------------------------------------
+    DASHBOARD CARDS
+------------------------------------------------------------------------------*/
+
+.img-accommodations {
+  width: 90%;
+}
+
+.dashboard-cards {
+    border: none;
+    text-align: center;
+    box-shadow: none;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
+    min-height: 700px;
+    display: block;
+    overflow: auto;
+}
+
+.row-break {
+    height: 20px;
+    margin: 0px;
+}
+
+.row-cards {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------------------------
+    RESTAURANT  CARDS
+------------------------------------------------------------------------------*/
+
+
+.row-restaurants {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.row-restaurants a {
+  font-size: 18px;
+  color: #111;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+}
+
+.row-restaurants a:hover,
+.row-restaurants a:active,
+.row-restaurants a:focus {
+    color: #ff8000;
+}
+
+
+.restaurant-content {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+  margin: 2px 0px !important;
+  line-height: 1.2;
+}
+
+.rating {
+  color: #666666;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+
+.rating i {
+font-size: 12px;
+}
+
+.fa-star {
+ color: #ff8000;
+
+}
+
+.fa-dollar-sign {
+  color: #3f723f;
+}
+
+.cuisine {
+  color: #999999;
+  margin-top: 6px !important;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-style: italic;
+
+}
+
+.maps {
+  color: #666666;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+.fa-map-marker-alt {
+   color: #d74a3a;
+}
+
+
+.img-restaurants {
+  width: 90%;
+}
+
+/*------------------------------------------------------------------------------
+   ACCOMMODATION  CARDS
+------------------------------------------------------------------------------*/
+
+.row-accommodations {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.row-accommodations a {
+  font-size: 18px;
+  color: #111;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+}
+
+.row-accommodations a:hover,
+.row-accommodations a:active,
+.row-accommodations a:focus {
+    color: #ff8000;
+}
+
+
+.accommodation-content {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+  margin: 2px 0px !important;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+
+.accommodation-rating {
+  color: #666666;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+  margin:8px 0px 0px 0px;
+}
+
+
+.rating i {
+font-size: 12px;
+}
+
+.fa-dollar-sign {
+  color: #3f723f;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    CAR CARDS
+------------------------------------------------------------------------------*/
+
+
+.card-car  {
+border-bottom: 1px solid #ebebeb;
+}
+
+.card-car p {
+margin-top: 0px;
+font-size: 16px;
+letter-spacing: 0.6px;
+
+}
+
+.img-car {
+  width:60%;
+  margin-left: 15%;
+
+}
+
+.card-car a {
+  font-size: 18px;
+  color: #111;
+  line-height: 1.2;
+  font-weight:bold;
+  letter-spacing: 0.6px;
+}
+
+
+
+
+/*------------------------------------------------------------------------------
+    VISIT CARDS
+------------------------------------------------------------------------------*/
+
+.card-visit {
+
+}
+.card .card-image .card-title {
+ background: #ff8000;
+ padding: 8px;
+}
+
+.price-tag {
+
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  padding: 4px 12px;
+
+}
+
+
+/*------------------------------------------------------------------------------
+    DB MANAGER
+------------------------------------------------------------------------------*/
+.section-link {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  margin-left: 0px;
+
+  padding: 6px 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.section-link i {
+  font-size: 14px;
+}
+
+
+.section-link a {
+  color: #3c4146;
+}
+
+.section-link a:hover {
+  color: #ff7f00;
+}
+
+.bordered {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+
+
+.add-form .input-field {
+  padding:0px;
+}
+
+.input-field.col label {
+  left: 0px;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #ff7f00;
+  -webkit-box-shadow: 0 1px 0 0 #ff7f00;
+  box-shadow: 0 1px 0 0 #ff7f00;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #ff7f00;
+}
+
+.btn-submit {
+  background: #ff7f00;
+  width:100%;
+  border-radius: 5px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.btn-submit:hover,
+.btn-submit:active,
+.btn-submit:focus {
+  background: #dd6a35;
+
+}
+
+
+/*------------------------------------------------------------------------------
+    EVENT CARDS
+------------------------------------------------------------------------------*/
+
+.row-event a {
+  font-size: 18px;
+  color: #111;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+
+}
+
+.img-event {
+   width:85%;
+
+}
+
+.table-event tr {
+ border-bottom: none;
+
+}
+
+.table-event td {
+  padding: 4px;
+  font-size: 14px;
+  line-height: 1;
+}
+.event-content {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+  margin: 2px 0px !important;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+
+/*----------------------------------------------
+    SEARCHBOX
+------------------------------------------------*/
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.col-brand {
+  line-height: 100px;
+  height: 100px;
+  padding-left: 0px !important;
+}
+
+
+.col-searchbox {
+    line-height: 100px;
+    height: 100px;
+}
+
+.row-search {
+    margin: 50px 0px 20px 0px;
+}
+
+.row-search h4 {
+    font-size: 42px;
+    color: #5f6368;
+    margin-bottom: 30px;
+
+}
+
+.searchbox-wrapper {
+    position: relative;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 0px;
+}
+
+.searchbox-wrapper-long {
+    position: relative;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 0px;
+}
+
+.btn-transparent {
+    position: absolute;
+    top: 0px;
+    font-size: 28px;
+    height:100%;
+    color: #ff7f00;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+
+/*----------------------------------------------
+    RESTAURANT SEARCH
+------------------------------------------------*/
+
+#searchbox {
+    box-shadow: 0 1px rgba(188,188,183,0.30);
+    border: 1px solid rgba(188,188,183,0.50);
+    border-radius: 8px;
+    width: 98%;
+    margin: auto;
+    padding: 4px 8px;
+    font-size: 18px;
+    color: #202124;
+}
+
+
+#searchbox::placeholder {
+    color: #3c4146 !important;
+}
+
+
+
+.searchbox-wrapper .col-link {
+  padding: 4px;
+}
+
+
+.btn-pill {
+    font-size: 10px;
+    color: #606060;
+    background-color: transparent !important;
+    box-shadow: none;
+    border: 1px solid rgba(188,188,183,0.50);
+    border-radius: 10px;
+    height: 28px;
+    line-height: 12px;
+    padding: 2px 8px;
+    width: 100%;
+    margin: auto;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+
+.btn-pill:hover,
+.btn-pill:focus,
+.btn-pill:active {
+  background: #ffb062 !important;
+  color: #6e6e6f;
+  box-shadow: none;
+}
+
+
+
+
+table {
+    width: 100%;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #90c73e;
+    box-shadow: 0 1px 0 0 #90c73e;
+
+}
+
+
+th {
+  background-color: #fff !important;
+  color: #14171a;
+  font-size: 12px;
+}
+
+tr {
+    border-bottom: none
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+td {
+    padding: 10px 5px;
+
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    border-top: 0px solid;
+}
+
+
+
+/*----------------------------------------------
+    WINES
+------------------------------------------------*/
+
+
+.wine-card {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  padding: 12px 6px;
+  border: 1px solid #e5e5e5;
+  color: #6d6d6e;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.wine-card h5{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 6px 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #14171a;
+  min-height: 36px;
+
+}
+
+.wine-card h6 {
+  margin: 2px 0px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.white-wine {
+  border: 1px solid #fff1a1;
+}
+
+.red-wine {
+  border: 1px solid #e0aba9;
+}
+
+
+
+
+/*----------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------*/
+
+
+@media(max-width:1700px) {
+  .dashboard-cards {
+    width: 99%;
+  }
+
+
+}
+
+
+
+@media(max-width:1361px) {
+
+  .card-side-right {
+    width: 90%;
+    margin-right: 2%;
+  }
+
+  .card .card-title {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .card-car p {
+    margin-top: 0px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+  }
+
+
+}
+
+@media(max-width:1200px) {
+
+.rating i {
+    font-size: 9px;
+}
+}
+
+
+@media(max-width:1025px) {
+
+
+
+}
+
+@media(max-width:998px) {
+
+.card-side-left {
+    width: 100%;
+    margin-left: 0;
+   }
+
+   .card-side-right {
+    width: 100%;
+    margin-right: 0;
+    }
+
+
+
+}
+
+
+@media(max-width:600px) {
+  .dashboard-cards {
+    width: 96%;
+  }
+
+  .img-restaurants {
+    width: 96%;
+  }
+
+  .searchbox-wrapper {
+
+    width: 92%;
+  }
+
+  .btn-transparent {
+    right:0px;
+  }
+  tr {
+    font-size: 10px;
+
+  }
+
+  .row-restaurants a {
+    font-size: 16px;
+  }
+
+  .restaurant-content {
+    font-size: 11px;
+  }
+
+  .rating {
+    color: #666666;
+    font-weight: 400;
+    font-size: 11px;
+  }
+
+  .cuisine {
+    color: #999999;
+    margin-top: 6px !important;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+}
+

@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% load staticfiles %}
+
+
+{% block content %}
+
+<div id="page-index">
+  <div class="dashboard-cards">
+    <div class="row plain-element">
+      <div class="col s12 m12 l12  plain-element">
+        <div class="row row-title plain-element">
+
+          <br><br><br>
+
+
+        </div>
+      </div>
+      <div class="row plain-element">
+
+
+        <div class="col s12 m12 l3 plain-element" id="activeTrendsColumn">
+          <div class="row bordered">
+            <div class="card card-side">
+              <div class="section-heading">
+                Upload <b> File </b>
+              </div>
+              <form action="{% url 'db_manager:property-upload' %}" class="col s12 plain-element add-form" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                 <div class="row plain-element left-align">
+                  <div class="file-field input-field csv-field">
+                    <div class="btn btn-file">
+                      <span>File:</span>
+                      <input type="file" name="csv_file" id="csv_file" accept=".csv" required="True"
+                             class="form-control">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate csv-input" type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <div class="row plain-element">
+                  <button class="btn btn-submit waves-effect waves-light" type="submit" name="action">Submit
+
+                  </button>
+
+
+                </div>
+
+              </form>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

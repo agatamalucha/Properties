@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% load staticfiles %}
+{% block extrahead %}
+<link href="{% static 'css/forms.css' %}" rel="stylesheet"/>
+{% endblock %}
+{% load account socialaccount %}
+{% block content %}
+<div id="page-index">
+
+
+    <div class="form-container">
+
+        <form class="form-user" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            <fieldset class="form-box">
+                <div class="row plain-element center-align">
+                    <h3>Log In</h3>
+                </div>
+                <div class="row plain-element center-align">
+                    <div class="row row-oauth">
+                        <div class="col col-sm-4 col-md-4 col-lg-4  plain-element ">
+                            <a href="/"> <i class="fab fa-twitter"></i> </a>
+                        </div>
+                        <div class="col col-sm-4 col-md-4 col-lg-4  plain-element ">
+                            <a href="/"> <i class="fab fa-github"></i> </a>
+                        </div>
+                        <div class="col col-sm-4 col-md-4  col-lg-4 plain-element ">
+                            <a href="/"> <i class="fab fa-google"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center row-form">
+                    <div class="row plain-element">
+                        <div class="input-field col s12">
+                            <input type="text" name="login" id="email" placeholder="Email" required id="id_login">
+                        </div>
+                    </div>
+                    <div class="row plain-element">
+                        <div class="input-field col s12">
+                            <input type="password" name="password" id="id_password" placeholder="Password" required>
+
+                        </div>
+                    </div>
+                    <div class="row plain-element">
+                        <div class="input-field col s12">
+                            <div class="">
+                                <label>
+                                    <input type="checkbox" class="checkbox-input" name="remember" id="id_remember">
+                                    <span class="label-checkbox">Remember Me</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-links">
+                    <p><a>Forgot Password</a>&nbsp; | &nbsp; <a>Create an Account</a></p>
+                </div>
+                <button type="submit" class="btn-login"><span>Continue <i
+                        class="far fa-arrow-alt-circle-right"></i></span>
+                </button>
+            </fieldset>
+        </form>
+    </div>
+    <!-- /container -->
+</div>
+{% endblock %}
