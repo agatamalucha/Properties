@@ -8,6 +8,4 @@ urlpatterns = [
 
     path("",home, name="home"),
     path("dashboard",dashboard, name="dashboard"),
-    path("ballincollig_properties",ballincollig_properties , name="ballincollig_properties" )
-
 ]

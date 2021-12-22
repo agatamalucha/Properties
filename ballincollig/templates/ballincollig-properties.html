@@ -9,33 +9,20 @@
 
 
     <div class="row plain-element">
-      <div class="col s12 m12 l1 plain-element"></div>
-      <div class="col s12 m12 l10  plain-element" id="restaurantsColumn">
+
+      <div class="col s12 m12 l10  plain-element" id="restaurantTable">
+          {{dataset|safe}}
 
         <div class="row plain-element">git a
           <div class="card card-side wine-dashboard">
             <a href="">
               <div class="section-heading">
-                Favourite <b>Wines </b>
+                 <b>Ballincollig Properties </b>
               </div>
             </a>
             <div class="row row-search">
               <div class="row plain-element left-align">
 
-
-                {% if wine_types %}
-                {% for element in wine_types %}
-
-                <form action="{% url 'wines:search-wine' %}" method="GET">
-                  {% csrf_token %}
-                  <input type="hidden" id="query" name="query" value="{{element}}">
-                  <div class="col s3 m2 l2 col-link">
-                    <button type="submit" class="btn btn-pill"> {{element}}</button>
-                  </div>
-                </form>
-
-                {% endfor %}
-                {% endif %}
               </div>
 
             </div>
@@ -111,7 +98,7 @@
           <div class="row row-break"></div>
         </div>
       </div>
-      <div class="col s12 m12 l1 plain-element"></div>
+
 
     </div>
 

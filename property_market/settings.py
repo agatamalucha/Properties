@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'core',
     'db_manager',
+    'ballincollig',
 
     'allauth',
     'allauth.account',

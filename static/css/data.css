@@ -460,47 +460,6 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
 
 
 
-table {
-    width: 100%;
-}
-
-input[type="text"]:not(.browser-default):focus:not([readonly]) {
-    border-bottom: 1px solid #90c73e;
-    box-shadow: 0 1px 0 0 #90c73e;
-
-}
-
-
-th {
-  background-color: #fff !important;
-  color: #14171a;
-  font-size: 12px;
-}
-
-tr {
-    border-bottom: none
-}
-
-tr:nth-child(odd) {
-    background-color: #fafafa;
-}
-
-td {
-    padding: 10px 5px;
-
-}
-
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > th {
-    border-top: 0px solid;
-}
-
-
-
 /*----------------------------------------------
     WINES
 ------------------------------------------------*/
