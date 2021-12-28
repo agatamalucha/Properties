@@ -4,106 +4,120 @@
 {% block content %}
 
 <div id="page-index">
-  <div class="dashboard-cards">
-    <br><br><br>
-
-
-    <div class="row plain-element">
-
-      <div class="col s12 m12 l10  plain-element" id="restaurantTable">
-          {{dataset|safe}}
-
-        <div class="row plain-element">git a
-          <div class="card card-side wine-dashboard">
-            <a href="">
-              <div class="section-heading">
-                 <b>Ballincollig Properties </b>
-              </div>
-            </a>
-            <div class="row row-search">
-              <div class="row plain-element left-align">
-
-              </div>
-
+    <div class="dashboard-cards">
+        <br><br><br>
+        <div class="row searchbox-wrapper ">
+            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
+                <button type="submit" class="btn btn-pill"> American</button>
             </div>
-            <br>
-            <div class="row plain-element">
-              <div class="row plain-element">
-                <div class="col s12 m12 l12 plain-element">
-                  {% for element in wines %}
-                  <div class="col s4 m3 l2">
-
-                    <div class="wine-card {{ element.colour }}-wine">
-                      <div class="row plain-element">
-                        <img src="{{ element.image }}" alt="wine" class="img-restaurants">
-
-                      </div>
-                      <div class="row plain-element">
-                        <h5>{{element.name}}</h5>
-                        <h6>{{element.strain}} </h6>
-                        <div class="row plain-element">
-
-                          <div class="col s6 m6 l6 left-align">
-                            <p>{{element.price}}€ </p>
-                          </div>
-                          <div class="col s6 m6 l6 right-align">
-                            <p>{{element.rating}}/5</p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  {% endfor %}
-                  {% if queryset %}
-                  {% for element in queryset %}
-                  <div class="col s4 m4 l2">
-
-                    <div class="wine-card {{ element.colour }}-wine">
-                      <div class="row plain-element">
-                        <img src="{{ element.image }}" alt="wine" class="img-restaurants">
-
-                      </div>
-                      <div class="row plain-element">
-                        <h5>{{element.name}}</h5>
-                        <h6>{{element.strain}} </h6>
-                        <div class="row plain-element">
-
-                          <div class="col s6 m6 l6 left-align">
-                            <p>{{element.price}}€ </p>
-                          </div>
-                          <div class="col s6 m6 l6 right-align">
-                            <p>{{element.rating}}/5</p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  {% endfor %}
-                  {% endif %}
-
-                </div>
-              </div>
-              <div class="row plain-element">
-
-
-              </div>
+            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
+                <button type="submit" class="btn btn-pill"> American</button>
             </div>
-          </div>
-
-          <div class="row row-break"></div>
+            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
+                <button type="submit" class="btn btn-pill"> American</button>
+            </div>
+            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
+                <button type="submit" class="btn btn-pill"> American</button>
+            </div>
         </div>
-      </div>
+        <br><br><br>
+
+        <div class="row plain-element">
+
+            <div class="col s12 m12 l10  plain-element" id="restaurantTable">
+                {{dataset|safe}}
+
+                <div class="row plain-element">git a
+                    <div class="card card-side wine-dashboard">
+                        <a href="">
+                            <div class="section-heading">
+                                <b>Ballincollig Properties </b>
+                            </div>
+                        </a>
+                        <div class="row row-search">
+                            <div class="row plain-element left-align">
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row plain-element">
+                            <div class="row plain-element">
+                                <div class="col s12 m12 l12 plain-element">
+                                    {% for element in wines %}
+                                    <div class="col s4 m3 l2">
+
+                                        <div class="wine-card {{ element.colour }}-wine">
+                                            <div class="row plain-element">
+                                                <img src="{{ element.image }}" alt="wine" class="img-restaurants">
+
+                                            </div>
+                                            <div class="row plain-element">
+                                                <h5>{{element.name}}</h5>
+                                                <h6>{{element.strain}} </h6>
+                                                <div class="row plain-element">
+
+                                                    <div class="col s6 m6 l6 left-align">
+                                                        <p>{{element.price}}€ </p>
+                                                    </div>
+                                                    <div class="col s6 m6 l6 right-align">
+                                                        <p>{{element.rating}}/5</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    {% endfor %}
+                                    {% if queryset %}
+                                    {% for element in queryset %}
+                                    <div class="col s4 m4 l2">
+
+                                        <div class="wine-card {{ element.colour }}-wine">
+                                            <div class="row plain-element">
+                                                <img src="{{ element.image }}" alt="wine" class="img-restaurants">
+
+                                            </div>
+                                            <div class="row plain-element">
+                                                <h5>{{element.name}}</h5>
+                                                <h6>{{element.strain}} </h6>
+                                                <div class="row plain-element">
+
+                                                    <div class="col s6 m6 l6 left-align">
+                                                        <p>{{element.price}}€ </p>
+                                                    </div>
+                                                    <div class="col s6 m6 l6 right-align">
+                                                        <p>{{element.rating}}/5</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    {% endfor %}
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                            <div class="row plain-element">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-break"></div>
+                </div>
+            </div>
+
+
+        </div>
 
 
     </div>
-
-
-  </div>
 </div>
 
 {% endblock %}
