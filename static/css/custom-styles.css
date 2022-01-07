@@ -154,7 +154,7 @@ html {
 .btn-transparent {
     position: absolute;
     top: -2px;
-    right: 20px;
+    right: 10px;
     font-size: 28px;
     height:100%;
     color: #4267b2;
@@ -205,6 +205,8 @@ html {
     margin-left: 2px;
     float: left;
 }
+
+
 
 /*------------------------------------------------------------------------------
     CARDS

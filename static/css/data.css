@@ -413,16 +413,17 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
     box-shadow: 0 1px rgba(188,188,183,0.30);
     border: 1px solid rgba(188,188,183,0.50);
     border-radius: 8px;
-    width: 98%;
+    width: 100%;
     margin: auto;
     padding: 4px 8px;
     font-size: 18px;
     color: #202124;
+    height: 50px;
 }
 
 
 #searchbox::placeholder {
-    color: #3c4146 !important;
+    color: #bfc1c3 !important;
 }
 
 
@@ -442,7 +443,7 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
     height: 28px;
     line-height: 12px;
     padding: 2px 8px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     font-weight: 400;
     letter-spacing: 0.6px;

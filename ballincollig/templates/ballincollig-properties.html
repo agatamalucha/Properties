@@ -5,20 +5,42 @@
 
 <div id="page-index">
     <div class="dashboard-cards">
+
+        <div class="row row-search">
+            <div class="row plain-element left-align">
+                <div class="search-container">
+
+                    <div class="row searchbox-wrapper">
+                        <form action="/search-name" class="col s12 plain-element add-form" method="GET">
+                        {% csrf_token %}
+                            <input class="form-control" id="searchbox" type="text" placeholder="Search for Restaurant"
+                                   aria-label="Search for Restaurant" name="query">
+                            <button class="btn-transparent" type="submit"><i class="fas fa-search search-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
         <br><br><br>
         <div class="row searchbox-wrapper ">
-            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
-                <button type="submit" class="btn btn-pill"> American</button>
-            </div>
-            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
-                <button type="submit" class="btn btn-pill"> American</button>
-            </div>
-            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
-                <button type="submit" class="btn btn-pill"> American</button>
-            </div>
-            <div class="col col-sm-12  col-md-4  col-lg-2 col-link">
-                <button type="submit" class="btn btn-pill"> American</button>
-            </div>
+
+            {% if areas %}
+            {% for element in areas %}
+            <form action="{% url 'ballincollig:search_property' %}"
+                  class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="GET">
+                {% csrf_token %}
+                <input type="hidden" id="area" name="area" value="{{element}}">
+
+                <button type="submit" class="btn btn-pill"> {{element}}</button>
+            </form>
+            {% endfor %}
+            {% endif %}
+
         </div>
         <br><br><br>
 
