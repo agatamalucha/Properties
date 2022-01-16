@@ -29,12 +29,12 @@
         <br><br><br>
         <div class="row searchbox-wrapper ">
 
-            {% if areas %}
-            {% for element in areas %}
-            <form action="{% url 'ballincollig:search-property' %}"
+            {% if years %}
+            {% for element in years %}
+            <form action="{% url 'ballincollig:search-year' %}"
                   class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="GET">
                 {% csrf_token %}
-                <input type="hidden" id="area" name="area" value="{{element}}">
+                <input type="hidden" id="area" name="year" value="{{element}}">
 
                 <button type="submit" class="btn btn-pill"> {{element}}</button>
             </form>
@@ -44,11 +44,10 @@
         </div>
         <br><br><br>
 
-        <div class="row plain-element">
+<div class="row plain-element">
 
             <div class="col s12 m12 l10  plain-element" id="restaurantTable">
                 {{dataset|safe}}
-
 
 
             </div>
