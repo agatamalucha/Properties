@@ -11,9 +11,9 @@
                 <div class="search-container">
 
                     <div class="row searchbox-wrapper">
-                        <form action="{% url 'ballincollig:search-area' %}" class="col s12 plain-element add-form" method="GET">
+                        <form action="{% url 'ballincollig:search-year-query' %}" class="col s12 plain-element add-form" method="GET">
                         {% csrf_token %}
-                            <input class="form-control" id="searchbox" type="text" placeholder="Search for Area"
+                            <input class="form-control" id="searchbox" type="text" placeholder="Search for Year"
                                    aria-label="Search for Area" name="sql_query">
                             <button class="btn-transparent" type="submit"><i class="fas fa-search search-icon"></i>
                             </button>
