@@ -22,8 +22,7 @@ urlpatterns = [
     path("", include("home.urls")),
     path('core/', include("core.urls")),
     path("db/", include("db_manager.urls")),
-    path("ballincollig/", include("ballincollig.urls"))
-
-
+    path("ballincollig/", include("ballincollig.urls")),
+    path("neom/", include("neom.urls")),
 
 ]

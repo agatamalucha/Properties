@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'core',
     'db_manager',
     'ballincollig',
+    'neom',
 
     'allauth',
     'allauth.account',
