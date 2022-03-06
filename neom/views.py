@@ -14,7 +14,12 @@ import json
 @login_required
 def neom_home(request):
     r = requests.get('https://data-collector.mycaprover.toutf.com/neom/jobs/')
-    print('xxxxxxxxxxxxxxxxxxxxx')
-    print(r.json())
-    return render(request, "dashboard.html",)
+    txt = r.json()
+    data = txt['results']
+    df = pd.DataFrame(data)
+    df = df.to_html(index=False)
+    # print(r.json())
+    # to pandas
+    # display as basic pandas table
+    return render(request, "jobs.html", { "df":df})
 
