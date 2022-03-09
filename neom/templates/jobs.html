@@ -5,12 +5,27 @@
 
 
 <div id="page-index">
-  <div class="dashboard-cards">
-    NEOM
+    <div class="dashboard-cards">
+        NEOM
 
-    {{df|safe}}
 
-  </div>
+        <br><br><br>
+        <div class="row searchbox-wrapper ">
+
+            {% for element in unique_division %}
+            <form action="{% url 'neom:neom-home' %}"
+                  class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="GET">
+                {% csrf_token %}
+                <input type="hidden" id="area" name="year" value="{{element}}">
+                <button type="submit" class="btn btn-pill"> {{element}}</button>
+            </form>
+            {% endfor %}
+        </div>
+        <br><br><br>
+
+        {{df|safe}}
+
+    </div>
 </div>
 
 
