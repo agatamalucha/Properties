@@ -17,11 +17,18 @@ def neom_home(request):
     txt = r.json()
     data = txt['results']
     df = pd.DataFrame(data)
-    unique_division = list(df['division'].unique())
-    df = df.to_html(index=False)
-    print(unique_division)
+    unique_divisions = list(df['division'].unique())
+
     # to pandas
     # display as basic pandas table
-    return render(request, "jobs.html", { "df":df , "unique_division":unique_division})
+    if request.method == "POST":
+        div = request.POST["unique_division"]
+        df = df[df["division"] == div]
+        df = df.to_html(index=False)
+        return render(request, "jobs.html", {"df": df, "unique_divisions": unique_divisions})
+
+
+    df = df.to_html(index=False)
+    return render(request, "jobs.html", { "df":df , "unique_divisions":unique_divisions})
 
 

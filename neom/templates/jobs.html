@@ -11,15 +11,16 @@
 
         <br><br><br>
         <div class="row searchbox-wrapper ">
-
-            {% for element in unique_division %}
+            {% if unique_divisions %}
+            {% for element in unique_divisions %}
             <form action="{% url 'neom:neom-home' %}"
-                  class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="GET">
+                  class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="POST">
                 {% csrf_token %}
-                <input type="hidden" id="area" name="year" value="{{element}}">
+                <input type="hidden" id="unique_division" name="unique_division" value="{{element}}">
                 <button type="submit" class="btn btn-pill"> {{element}}</button>
             </form>
             {% endfor %}
+            {% endif %}
         </div>
         <br><br><br>
 
