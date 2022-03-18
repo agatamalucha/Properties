@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'db_manager',
     'ballincollig',
     'neom',
+    'island_property',
 
     'allauth',
     'allauth.account',

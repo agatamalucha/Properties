@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% load staticfiles %}
+
+
+{% block content %}
+
+
+<div id="page-index">
+    <div class="dashboard-cards">
+        ISLAND
+<!--        <div class="row row-search">-->
+<!--            <div class="row plain-element left-align">-->
+<!--                <div class="search-container">-->
+
+<!--                    <div class="row searchbox-wrapper">-->
+<!--                        <form action="{% url 'neom:neom-search' %}" class="col s12 plain-element add-form" method="POST">-->
+<!--                        {% csrf_token %}-->
+<!--                            <input class="form-control" id="searchbox" type="text" placeholder="Search Job Title"-->
+<!--                                   aria-label="Search for Area" name="search_words">-->
+<!--                            <button class="btn-transparent" type="submit"><i class="fas fa-search search-icon"></i>-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!--                    </div>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+
+        <br><br><br>
+        <div class="row searchbox-wrapper ">
+            <form action="{% url 'island_property:island-home' %}"
+                  class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="GET">
+                {% csrf_token %}
+<!--                <input type="hidden" id="unique_division" name="unique_division" value="{{element}}">-->
+<!--                <button type="submit" class="btn btn-pill"> {{element}}</button>-->
+            </form>
+
+        </div>
+        <br><br><br>
+
+        {{df|safe}}
+
+    </div>
+</div>
+
+
+{% endblock %}

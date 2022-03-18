@@ -24,5 +24,6 @@ urlpatterns = [
     path("db/", include("db_manager.urls")),
     path("ballincollig/", include("ballincollig.urls")),
     path("neom/", include("neom.urls")),
+    path("island_property/", include("island_property.urls")),
 
 ]
