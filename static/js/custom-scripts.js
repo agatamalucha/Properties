@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.datepicker');
-  var options = { format: 'yyyy-mm-dd' };
-  var instances = M.Datepicker.init(elems, options);
-});
 
 
 function dropdown() {
@@ -15,6 +10,6 @@ function dropdown() {
 }
 
 
-$(document).ready(function(){
-  $('select').formSelect();
-});
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );

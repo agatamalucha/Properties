@@ -7,45 +7,62 @@
 <div id="page-index">
     <div class="dashboard-cards">
 
-                        <div class="row row-search">
-                    <div class="row plain-element left-align">
-                        <div class="search-container">
-                            <div class="row searchbox-wrapper">
-                                <form action="{% url 'island_property:island-home' %}"
-                  class="col col-sm-12 col-md-4  col-lg-2  plain-element add-form" method="GET">
-                {% csrf_token %}
-                <input type="hidden" id="unique_locality" name="island_average_sale" value="{{island_average_sale}}">
 
-            </form>
-                                {{island_average_sale}}
+        <div class="row row-search">
+            <div class="row plain-element left-align">
+                <div class="search-container">
 
-
+                    <div class="row searchbox-wrapper">
+                        <form action="{% url 'island_property:island-search' %}" class="col s12 plain-element add-form"
+                              method="POST">
+                            {% csrf_token %}
+                            <input class="form-control" id="searchbox" type="text" placeholder="Search Island"
+                                   aria-label="Search for Area" name="search_words">
+                            <button class="btn-transparent" type="submit"><i class="fas fa-search search-icon"></i>
+                            </button>
+                        </form>
                     </div>
-                        </div>
-                        </div>
-                        </div>
-        ISLAND
-                <div class="row row-search">
-                    <div class="row plain-element left-align">
-                        <div class="search-container">
 
-                            <div class="row searchbox-wrapper">
-                                <form action="{% url 'island_property:island-search' %}" class="col s12 plain-element add-form" method="POST">
-                                {% csrf_token %}
-                                    <input class="form-control" id="searchbox" type="text" placeholder="Search Island"
-                                           aria-label="Search for Area" name="search_words">
-                                    <button class="btn-transparent" type="submit"><i class="fas fa-search search-icon"></i>
-                                    </button>
-                                </form>
-                            </div>
-
-
-                        </div>
-                    </div>
 
                 </div>
+            </div>
 
-        <br><br><br>
+        </div>
+
+        <br>
+        <table id="table_id" class="display">
+            <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>xx</td>
+                <td>Row 1 Data 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 Data 1</td>
+                <td>Row 2 Data 2</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+
+        <div class="row searchbox-wrapper ">
+            <div class="row plain-element text-start">
+
+                <p> AVG Gran Canaria: {{gran_canaria}} eur/m2</p>
+                <p> AVG Lanzerote: {{lanzerote}} eur/m2</p>
+                <p> AVG Mallorca: {{mallorca}} eur/m2</p>
+                <p> AVG Tenerife: {{tenerife}} eur/m2</p>
+
+            </div>
+        </div>
+        <br> <br>
         <div class="row searchbox-wrapper ">
             {% if unique_localities %}
             {% for element in unique_localities %}
